@@ -12,6 +12,7 @@ export default {
         tertiaryBg: 'var(--tertiary-bg)',
         textDark: 'var(--text-dark)',
         textAccent: 'var(--text-accent)',
+        textAccentLight: 'var(--text-accent-light)',
         textLight: 'var(--text-light)',
         buttonDark: 'var(--button-dark-bg)',
       },
