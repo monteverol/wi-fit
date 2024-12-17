@@ -2,6 +2,7 @@ import React from 'react';
 import Logo from '../components/logo';
 import DayTile from '../components/dayTile';
 import { getWeekDays } from '../utils/dateUtils';
+import running from '../assets/exercises/running.png';
 
 function Dashboard() {
   const today = new Date();
@@ -12,7 +13,7 @@ function Dashboard() {
       {/* UPPER */}
       <div className="w-full flex flex-row justify-between gap-8">
         {/* LEFT */}
-        <div className="w-[80%] flex flex-col justify-between gap-16">
+        <div className="w-[70%] flex flex-col justify-between gap-16">
           {/* DATE */}
           <div className="w-full flex flex-row gap-16">
             {/* ICON */}
@@ -23,7 +24,7 @@ function Dashboard() {
               </h3>
             </div>
             {/* DATE */}
-            <div className="w-auto flex flex-row gap-8">
+            <div className="w-full flex flex-row gap-8 justify-evenly">
               {weekDays.map((day, index) => (
                 <DayTile
                   key={index}
@@ -36,10 +37,11 @@ function Dashboard() {
           </div>
           <div className="flex flex-row justify-between items-center">
             <h1 className="text-textDark font-bold text-6xl">Hello, γυμναζόμενος! Today's workout is ready, start?</h1>
+            <img src={running} alt="Just a running icon" />
           </div>
         </div>
         {/* RIGHT */}
-        <div className="w-[20%]"></div>
+        <div className="w-[30%]"></div>
       </div>
 
       {/* LOWER */}
