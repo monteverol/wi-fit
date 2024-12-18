@@ -15,6 +15,7 @@ export default {
         textAccentLight: 'var(--text-accent-light)',
         textLight: 'var(--text-light)',
         buttonDark: 'var(--button-dark-bg)',
+        tileBg: 'var(--tile-bg)',
       },
     },
   },

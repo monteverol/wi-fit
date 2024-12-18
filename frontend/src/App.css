@@ -11,6 +11,7 @@
   --text-accent: #2E2D2B;
   --text-accent-light: #636363;
   --text-light: #FFFFFF;
+  --tile-bg: #DADADA;
 }
 
 * {
@@ -20,4 +21,8 @@
   user-select: none;
   font-family: "Inter", serif;
   font-optical-sizing: auto;
+}
+
+body {
+  overflow: hidden;
 }
