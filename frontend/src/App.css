@@ -12,6 +12,8 @@
   --text-accent-light: #636363;
   --text-light: #FFFFFF;
   --tile-bg: #DADADA;
+  --secondary-tile-bg: #E4E4E4;
+  --dark-tile-bg: #B9B9B9;
 }
 
 * {

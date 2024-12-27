@@ -16,6 +16,8 @@ export default {
         textLight: 'var(--text-light)',
         buttonDark: 'var(--button-dark-bg)',
         tileBg: 'var(--tile-bg)',
+        secondaryTileBg: 'var(--secondary-tile-bg)',
+        darkTileBg: 'var(--dark-tile-bg)',
       },
     },
   },

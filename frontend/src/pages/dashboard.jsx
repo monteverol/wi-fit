@@ -7,6 +7,7 @@ import microcontroller from '../assets/microcontroller.png';
 import settings from '../assets/settings.png';
 import MicroControllerIcon from '../components/microControllerIcon';
 import ExerciseTile from '../components/exerciseTile';
+import WorkoutTile from '../components/workoutTile';
 
 function Dashboard() {
   const today = new Date();
@@ -66,7 +67,9 @@ function Dashboard() {
       {/* LOWER */}
       <div className="flex flex-row gap-8 h-full justify-between">
           {/* LEFT */}
-          <div className="h-full w-[70%] p-8 bg-secondaryBg rounded-3xl flex flex-col relative"></div>
+          <div className="h-full w-[70%] p-8 bg-secondaryBg rounded-3xl flex flex-col relative">
+            <WorkoutTile description="Morning workout before work" />
+          </div>
           {/* RIGHT */}
           <div className="h-full w-[25%] p-4 bg-secondaryBg rounded-3xl flex flex-col gap-4 overflow-y-scroll">
               <ExerciseTile exercise="push up" width={100} />
