@@ -14,7 +14,7 @@ const WorkoutTile = ({ description }) => {
                     <h2 className="text-textAccent text-2xl font-bold">
                         {description}
                     </h2>
-                    <div className="flex flex-row gap-4 items-center">
+                    <div className="flex flex-row gap-8 items-center">
                         <h2 className="text-textAccent text-xl">10:30 Tue, Wed, Thu</h2>
                         <FaRegClock size={40} color="#000000" />
                     </div>

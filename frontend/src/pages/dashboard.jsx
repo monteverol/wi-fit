@@ -7,6 +7,7 @@ import microcontroller from '../assets/microcontroller.png';
 import settings from '../assets/settings.png';
 import MicroControllerIcon from '../components/microControllerIcon';
 import ExerciseTile from '../components/exerciseTile';
+import WorkoutTile from '../components/workoutTile';
 
 function Dashboard() {
   const today = new Date();
