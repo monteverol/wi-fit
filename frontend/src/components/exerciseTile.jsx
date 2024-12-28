@@ -5,7 +5,7 @@ import lunges from '../assets/exercises/lunges.png';
 import pushUp from '../assets/exercises/pushUp.png';
 import squats from '../assets/exercises/squats.png';
 
-const ExerciseTile = ({ exercise, width }) => {
+const ExerciseTile = ({ exercise }) => {
     // Map exercise names to their corresponding image imports
     const exerciseIcons = {
         'Jog In Place': jogInPlace,
@@ -26,10 +26,8 @@ const ExerciseTile = ({ exercise, width }) => {
     const formattedExercise = capitalizeExercise(exercise);
     const icon = exerciseIcons[formattedExercise]; // Retrieve the correct image
 
-    const widthSize = `w-[${width}%]`;
-
     return (
-        <div className={`${widthSize} h-40 flex flex-row justify-between items-center bg-tileBg py-4 2xl:px-16 lg:px-8 sm:px-4 rounded-2xl`}>
+        <div className={`w-full h-40 flex flex-row justify-between items-center bg-tileBg py-4 2xl:px-16 lg:px-8 sm:px-4 rounded-2xl`}>
             <h2 className="font-bold 2xl:text-4xl lg:text-2xl sm:text-xl text-textDark">{formattedExercise}</h2>
             {icon ? (
                 <img src={icon} alt={`${formattedExercise} icon`} />
