@@ -14,6 +14,8 @@
   --tile-bg: #DADADA;
   --secondary-tile-bg: #E4E4E4;
   --dark-tile-bg: #B9B9B9;
+  --logo-dark: #747474;
+  --logo-light: #F1F1F1;
 }
 
 * {

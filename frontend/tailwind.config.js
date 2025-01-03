@@ -18,6 +18,8 @@ export default {
         tileBg: 'var(--tile-bg)',
         secondaryTileBg: 'var(--secondary-tile-bg)',
         darkTileBg: 'var(--dark-tile-bg)',
+        logoLight: 'var(--logo-light)',
+        logoDark: 'var(--logo-dark)',
       },
     },
   },
