@@ -3,6 +3,9 @@
 :root {
     --primary-bg: #F6F6F6;
     --icon: #5F5F5F;
+    --text: #575757;
+    --button: #DADADA;
+    --button-confirm: #DAF0C8;
 }
 
 * {

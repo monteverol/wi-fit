@@ -16,7 +16,7 @@ const Wrapper = () => {
             case 'Settings':
                 return <Settings />;
             default:
-                return <Home />;
+                return <Home userName="Shand" />;
         }
     };
 
@@ -26,7 +26,7 @@ const Wrapper = () => {
             <div className="w-full h-full flex flex-row justify-between items-center">
                 <Logo />
                 <Navigation activePage={activePage} setActivePage={setActivePage} />
-                <MicroController status={true} />
+                {activePage == "Settings" ? null : <MicroController status={true} />}
             </div>
             {/* BODY */}
             <div className="row-span-5 rounded-3xl p-4">

@@ -9,6 +9,9 @@ export default {
       colors: {
         primaryBg: 'var(--primary-bg)',
         icon: 'var(--icon)',
+        text: 'var(--text)',
+        button: 'var(--button)',
+        buttonConfirm: 'var(--button-confirm)',
         // primaryBg: 'var(--primary-bg)',
         // secondaryBg: 'var(--secondary-bg)',
         // tertiaryBg: 'var(--tertiary-bg)',

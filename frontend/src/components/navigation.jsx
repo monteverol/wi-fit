@@ -11,14 +11,14 @@ const Navigation = ({ activePage, setActivePage }) => {
     }
 
     return(
-        <div className="p-4 rounded-full bg-white flex flex-row gap-4 drop-shadow-md">
+        <div className="p-4 rounded-full bg-white flex flex-row gap-4 drop-shadow-lg">
             {/* WORKOUT */}
             <div 
                 className={`${isActive(pages[0]) ? 'bg-[#DADADA]' : null} p-8 flex flex-row gap-4 items-center justify-between cursor-pointer rounded-full hover:bg-[#DADADA]`}
                 onClick={() => setActivePage(pages[0])}
             >
                 <IoBarbell size={40} color="var(--icon)" />
-                <h3 className="font-bold text-4xl"> Workout </h3>
+                <h3 className="font-bold text-4xl text-text"> Workout </h3>
             </div>
             {/* HOME */}
             <div 
@@ -26,7 +26,7 @@ const Navigation = ({ activePage, setActivePage }) => {
                 onClick={() => setActivePage(pages[1])}
             >
                 <GoHomeFill size={40} color="var(--icon)" />
-                <h3 className="font-bold text-4xl"> Home </h3>
+                <h3 className="font-bold text-4xl text-text"> Home </h3>
             </div>
             {/* SETTINGS */}
             <div 
@@ -34,7 +34,7 @@ const Navigation = ({ activePage, setActivePage }) => {
                 onClick={() => setActivePage(pages[2])}
             >
                 <IoMdSettings size={40} color="var(--icon)" />
-                <h3 className="font-bold text-4xl"> Settings </h3>
+                <h3 className="font-bold text-4xl text-text"> Settings </h3>
             </div>
         </div>
     );

@@ -5,8 +5,8 @@ import { FaCircleXmark } from "react-icons/fa6";
 
 export const MicroController = ({ status }) => {
     return(
-        <div className="p-8 rounded-3xl drop-shadow-md bg-white flex flex-row gap-4 w-80">
-            <h3 className="font-bold text-4xl">ESP32's Status</h3>
+        <div className="p-8 rounded-3xl drop-shadow-lg bg-white flex flex-row gap-4 w-80">
+            <h3 className="font-bold text-4xl text-text">ESP32's Status</h3>
             <MicroControllerIcon status={status} />
         </div>
     );
