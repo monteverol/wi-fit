@@ -8,7 +8,6 @@ CORS(app)
 
 @app.route('/amplitude', methods=['GET'])
 def get_amplitude():
-
     amplitude = random.uniform(-10, 10)
     return jsonify({"amplitude": amplitude})
 

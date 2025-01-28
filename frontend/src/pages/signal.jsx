@@ -10,7 +10,7 @@ const Signal = () => {
       const data = await response.json();
       setAmplitudes((prev) => {
         const updated = [...prev, data.amplitude];
-        return updated.length > 50 ? updated.slice(1) : updated; // Keep the last 50 points (5 seconds at 100ms)
+        return updated.length > 100 ? updated.slice(1) : updated; // Keep the last 100 points (10 seconds at 100ms intervals)
       });
     } catch (error) {
       console.error('Error fetching amplitude:', error);
@@ -31,7 +31,7 @@ const Signal = () => {
       ctx.beginPath();
 
       amplitudes.forEach((amp, index) => {
-        const x = (canvas.width / 50) * index; // Scale x-axis for 50 points
+        const x = (canvas.width / 100) * index; // Scale x-axis for 100 points
         const y = canvas.height / 2 - amp * (canvas.height / 20); // Scale y-axis
         index === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
       });
