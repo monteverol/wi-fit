@@ -67,16 +67,17 @@ function Dashboard() {
       {/* LOWER */}
       <div className="flex flex-row gap-8 h-full justify-between">
           {/* LEFT */}
-          <div className="h-full w-[70%] p-8 bg-secondaryBg rounded-3xl flex flex-col relative">
+          <div className="h-full w-[70%] p-8 bg-secondaryBg rounded-3xl flex flex-col gap-8 relative">
             <WorkoutTile description="Morning workout before work" />
+            <WorkoutTile description="Afternoon workout 1" />
           </div>
           {/* RIGHT */}
           <div className="h-full w-[25%] p-4 bg-secondaryBg rounded-3xl flex flex-col gap-4 overflow-y-scroll">
-              <ExerciseTile exercise="push up" width={100} />
-              <ExerciseTile exercise="jog in place" width={100} />
-              <ExerciseTile exercise="squats" width={100} />
-              <ExerciseTile exercise="jumping jacks" width={100} />
-              <ExerciseTile exercise="lunges" width={100} />
+              <ExerciseTile exercise="push up" />
+              <ExerciseTile exercise="jog in place" />
+              <ExerciseTile exercise="squats" />
+              <ExerciseTile exercise="jumping jacks" />
+              <ExerciseTile exercise="lunges" />
           </div>
       </div>
     </div>
