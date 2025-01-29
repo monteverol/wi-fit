@@ -3,10 +3,29 @@
 :root {
     --primary-bg: #F6F6F6;
     --icon: #5F5F5F;
+    --icon-dark: #4F4F4F;
+    --text: #575757;
+    --text-dark: #080808;
+    --text-light: #919191;
+    --button: #DADADA;
+    --button-confirm: #DAF0C8;
+    --container: #DADADA;
+    --day: #DADADA;
+    --day-active: #5F5F5F;
+    --border: #E1E1E1;
+    --connection: #6083BB;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.vignette::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 90%);
+    pointer-events: none;
 }

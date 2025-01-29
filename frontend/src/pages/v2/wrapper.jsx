@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Logo from '../../components/logo';
 import Navigation from '../../components/navigation';
 import MicroController from '../../components/microController';
@@ -7,7 +7,13 @@ import Settings from './settings';
 import Home from './home';
 
 const Wrapper = () => {
-    const [activePage, setActivePage] = useState('Home');
+    const [activePage, setActivePage] = useState(() => {
+        return localStorage.getItem('activePage') || 'Home';
+    });
+
+    useEffect(() => {
+        localStorage.setItem('activePage', activePage);
+    }, [activePage]);
 
     const renderContent = () => {
         switch (activePage) {
@@ -16,7 +22,7 @@ const Wrapper = () => {
             case 'Settings':
                 return <Settings />;
             default:
-                return <Home />;
+                return <Home username="Shand" />;
         }
     };
 
@@ -26,13 +32,11 @@ const Wrapper = () => {
             <div className="w-full h-full flex flex-row justify-between items-center">
                 <Logo />
                 <Navigation activePage={activePage} setActivePage={setActivePage} />
-                <MicroController status={true} />
+                <MicroController status={true} hide={activePage === "Settings"} />
             </div>
             {/* BODY */}
-            <div className="row-span-5 rounded-3xl p-4">
-                
+            <div className="row-span-5 rounded-3xl">
                 {renderContent()}
-            
             </div>
         </div>
     );
