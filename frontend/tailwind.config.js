@@ -9,6 +9,7 @@ export default {
       colors: {
         primaryBg: 'var(--primary-bg)',
         icon: 'var(--icon)',
+        iconDark: 'var(--icon-dark)',
         text: 'var(--text)',
         textDark: 'var(--text-dark)',
         textLight: 'var(--text-light)',
@@ -17,6 +18,8 @@ export default {
         container: 'var(--container)',
         day: 'var(--day)',
         dayActive: 'var(--day-active)',
+        border: 'var(--border)',
+        connection: 'var(--connection)',
         // primaryBg: 'var(--primary-bg)',
         // secondaryBg: 'var(--secondary-bg)',
         // tertiaryBg: 'var(--tertiary-bg)',

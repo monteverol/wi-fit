@@ -3,9 +3,9 @@ import microcontroller from '../assets/microcontroller.png';
 import { FaCheckCircle } from "react-icons/fa";
 import { FaCircleXmark } from "react-icons/fa6";
 
-export const MicroController = ({ status }) => {
+export const MicroController = ({ status, hide }) => {
     return(
-        <div className="px-8 py-4 rounded-3xl drop-shadow-lg bg-white flex flex-row gap-4 w-60">
+        <div className={`${hide ? 'invisible' : 'visible'} px-8 py-4 rounded-3xl drop-shadow-lg bg-white flex flex-row gap-4 w-60`}>
             <h3 className="font-bold text-2xl text-text">ESP32's Status</h3>
             <MicroControllerIcon status={status} />
         </div>

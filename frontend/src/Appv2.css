@@ -3,6 +3,7 @@
 :root {
     --primary-bg: #F6F6F6;
     --icon: #5F5F5F;
+    --icon-dark: #4F4F4F;
     --text: #575757;
     --text-dark: #080808;
     --text-light: #919191;
@@ -11,6 +12,8 @@
     --container: #DADADA;
     --day: #DADADA;
     --day-active: #5F5F5F;
+    --border: #E1E1E1;
+    --connection: #6083BB;
 }
 
 * {
