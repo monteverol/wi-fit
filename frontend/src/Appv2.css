@@ -18,3 +18,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.vignette::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.5) 90%);
+    pointer-events: none;
+}

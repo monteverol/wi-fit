@@ -29,7 +29,7 @@ const Wrapper = () => {
                 {activePage == "Settings" ? null : <MicroController status={true} />}
             </div>
             {/* BODY */}
-            <div className="row-span-5 rounded-3xl p-4">
+            <div className="row-span-5 rounded-3xl">
                 
                 {renderContent()}
             
