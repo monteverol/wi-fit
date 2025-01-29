@@ -1,28 +1,32 @@
 import React from 'react';
 import { getWeekDays } from '../../utils/dateUtils';
-import { IoScale } from "react-icons/io5";
+import WelcomeContainer from '../../components/welcomeContainer';
+import DayTile from '../../components/dayTile';
 
-const Home = ({ userName }) => {
+const Home = ({ username }) => {
+    const weekdays = getWeekDays();
+
     return (
         <div className="h-full w-full grid grid-flow-row grid-rows-5 gap-8">
             <div className="w-full h-full grid grid-flow-col grid-cols-4 gap-8">
-                <div className="w-full h-full p-8 rounded-3xl bg-white drop-shadow-lg flex flex-col justify-between">
-                    <h2 className="font-bold text-text text-3xl"> Welcome, {userName}! Start Workout? </h2>
-                    <div className="w-full flex flex-row justify-between">
-                        <button 
-                            className="px-8 py-4 font-bold text-3xl text-text flex flex-row gap-4 items-center justify-between bg-button rounded-full drop-shadow-md"
-                        >
-                            <IoScale size={30} color="var(--icon)" />
-                            BMI
-                        </button>
-                        <button 
-                            className="px-8 py-4 font-bold text-3xl text-text flex flex-row gap-4 items-center justify-between bg-buttonConfirm rounded-full drop-shadow-md"
-                        >
-                            Continue Workout
-                        </button>
+                <WelcomeContainer username={username} />
+                <div className="col-span-3 w-full h-full rounded-3xl bg-white drop-shadow-lg flex flex-row">
+                    <div className="w-full h-full flex flex-row gap-4 p-4">
+                        {
+                            weekdays.map((day, index) => (
+                                <DayTile
+                                    key={index}
+                                    number={day.number}
+                                    day={day.day}
+                                    isActive={day.isActive}
+                                />
+                            ))
+                        }
+                    </div>
+                    <div className="w-80 h-full bg-container flex items-center justify-center rounded-3xl">
+                        <h2 className="font-bold text-4xl text-textDark"> January </h2>
                     </div>
                 </div>
-                <div className="col-span-3 w-full h-full rounded-3xl bg-blue-500"></div>
             </div>
         </div>
     );

@@ -16,7 +16,7 @@ const Wrapper = () => {
             case 'Settings':
                 return <Settings />;
             default:
-                return <Home userName="Shand" />;
+                return <Home username="Shand" />;
         }
     };
 

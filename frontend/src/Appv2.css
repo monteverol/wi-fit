@@ -4,8 +4,13 @@
     --primary-bg: #F6F6F6;
     --icon: #5F5F5F;
     --text: #575757;
+    --text-dark: #080808;
+    --text-light: #919191;
     --button: #DADADA;
     --button-confirm: #DAF0C8;
+    --container: #DADADA;
+    --day: #DADADA;
+    --day-active: #5F5F5F;
 }
 
 * {
