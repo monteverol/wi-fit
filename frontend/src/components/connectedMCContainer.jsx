@@ -11,8 +11,8 @@ const ConnectedMicroControllerContainer = ({ connectedMicrocontroller }) => {
             </div>
             <div className="h-auto w-full border-4 border-border rounded-3xl p-4 flex flex-col gap-4">
                 {
-                    connectedMicrocontroller[0].map((item) => (
-                        <ConnectedMicrocontroller key={item.id} name={item} />
+                    connectedMicrocontroller.map((item, index) => (
+                        <ConnectedMicrocontroller key={index} name={item} />
                     ))
                 }
             </div>

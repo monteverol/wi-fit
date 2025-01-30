@@ -7,16 +7,14 @@ const ConnectMicrocontroller = () => {
     const connected = ["ESP32 1 - Left", "ESP32 2 - Right"]
     const available = ["ESP32 1 - Left", "ESP32 2 - Right"]
 
-    const availableMicrocontroller = useState([...available]);
-    const connectedMicrocontroller = useState([...connected]);
-
-    console.log(connectedMicrocontroller)
+    const [availableMicrocontroller, setAvailableMicrocontroller] = useState([...available]);
+    const [connectedMicrocontroller, setConnectedMicrocontroller] = useState([...connected]);
 
     return(
         <div className="w-full h-full flex flex-col p-8 gap-8 overflow-y-scroll">
             <div className="flex flex-row gap-4 items-center">
-                <img src={microcontroller} alt="microcontroller" />
-                <h1 className="font-bold text-4xl text-text"> Connect ESP32 Device </h1>
+                <img src={microcontroller} alt="microcontroller" className="h-[60%]" />
+                <h1 className="font-bold text-2xl text-text"> Connect ESP32 Device </h1>
             </div>
             <ConnectedMicroControllerContainer 
                 connectedMicrocontroller={connectedMicrocontroller} 

@@ -11,7 +11,7 @@ const AvailableMicroControllerContainer = ({ availableMicrocontroller }) => {
             </div>
             <div className="h-auto w-full border-4 border-border rounded-3xl p-4 flex flex-col gap-4">
                 {
-                    availableMicrocontroller[0].map((item, index) => (
+                    availableMicrocontroller.map((item, index) => (
                         <DetectedMicrocontroller key={index} name={item} />
                     ))
                 }
