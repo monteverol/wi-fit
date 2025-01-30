@@ -8,7 +8,7 @@ const DateContainer = () => {
 
     return(
         <div className="col-span-3 w-full h-full rounded-3xl bg-white drop-shadow-lg flex flex-row">
-            <div className="w-full h-full flex flex-row gap-4 p-4">
+            <div className="w-full h-full flex flex-row gap-4 px-8 py-4">
                 {
                     weekdays.map((day, index) => (
                         <DayTile
@@ -20,8 +20,8 @@ const DateContainer = () => {
                     ))
                 }
             </div>
-            <div className="w-80 h-full bg-container flex items-center justify-center rounded-3xl">
-                <h2 className="font-bold text-4xl text-textDark"> 
+            <div className="w-80 h-full bg-container flex items-center justify-center rounded-3xl drop-shadow-md">
+                <h2 className="font-bold text-2xl text-textDark"> 
                     {today.toLocaleString('default', { month: 'long' })}
                 </h2>
             </div>

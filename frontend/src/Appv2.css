@@ -7,6 +7,7 @@
     --text: #575757;
     --text-dark: #080808;
     --text-light: #919191;
+    --text-streak: #D75D1B;
     --button: #DADADA;
     --button-confirm: #DAF0C8;
     --container: #DADADA;
@@ -14,6 +15,8 @@
     --day-active: #5F5F5F;
     --border: #E1E1E1;
     --connection: #6083BB;
+    --fire: #FF752B;
+    --confirm: #60BB68;
 }
 
 * {
