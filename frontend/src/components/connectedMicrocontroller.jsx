@@ -1,16 +1,16 @@
 import React from 'react';
 
-const DetectedMicrocontroller = ({ name }) => {
+const ConnectedMicrocontroller = ({ name }) => {
     return(
         <div className="w-full flex flex-row justify-between items-center border-b-4 border-border p-4">
             <h3 className="font-bold text-xl text-text"> {name} </h3>
             <button
-                className="w-40 py-2 font-bold text-xl text-connect border-connect border-4 rounded-full"
+                className="w-40 py-2 font-bold text-xl text-disconnect border-disconnect border-4 rounded-full"
             >
-                Connect
+                Disconnect
             </button>
         </div>
     );
 }
 
-export default DetectedMicrocontroller;
+export default ConnectedMicrocontroller;

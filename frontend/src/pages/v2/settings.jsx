@@ -26,7 +26,7 @@ const Settings = () => {
             </div>
 
             {/* Blue Background Content Area */}
-            <div className="col-span-3 h-full w-full bg-white border-4 border-border rounded-3xl drop-shadow-md">
+            <div className="col-span-3 h-full w-full bg-white border-4 border-border rounded-3xl drop-shadow-md overflow-hidden">
                 
                 {renderContent()}
 

@@ -14,7 +14,8 @@
     --day: #DADADA;
     --day-active: #5F5F5F;
     --border: #E1E1E1;
-    --connection: #6083BB;
+    --connect: #6083BB;
+    --disconnect: #BB6860;
     --fire: #FF752B;
     --confirm: #60BB68;
 }
